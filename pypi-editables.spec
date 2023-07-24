@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-editables
-Version  : 0.4
-Release  : 13
-URL      : https://files.pythonhosted.org/packages/43/8a/a060ff3e75328015150f680b4b4bc4617644aaef199ece380342a334d78f/editables-0.4.tar.gz
-Source0  : https://files.pythonhosted.org/packages/43/8a/a060ff3e75328015150f680b4b4bc4617644aaef199ece380342a334d78f/editables-0.4.tar.gz
+Version  : 0.5
+Release  : 14
+URL      : https://files.pythonhosted.org/packages/37/4a/986d35164e2033ddfb44515168a281a7986e260d344cf369c3f52d4c3275/editables-0.5.tar.gz
+Source0  : https://files.pythonhosted.org/packages/37/4a/986d35164e2033ddfb44515168a281a7986e260d344cf369c3f52d4c3275/editables-0.5.tar.gz
 Summary  : Editable installations
 Group    : Development/Tools
 License  : MIT
@@ -55,10 +55,10 @@ python3 components for the pypi-editables package.
 
 
 %prep
-%setup -q -n editables-0.4
-cd %{_builddir}/editables-0.4
+%setup -q -n editables-0.5
+cd %{_builddir}/editables-0.5
 pushd ..
-cp -a editables-0.4 buildavx2
+cp -a editables-0.5 buildavx2
 popd
 
 %build
@@ -66,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1688679278
+export SOURCE_DATE_EPOCH=1690232590
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
